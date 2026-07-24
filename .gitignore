@@ -1,0 +1,16 @@
+# Personal and sensitive local material
+private/
+secrets/
+*.local.*
+*.private.*
+
+# Downloads and temporary files
+tmp/
+downloads/
+*.tmp
+~$*
+
+# Tool caches
+.claude/
+.codex/
+
