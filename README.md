@@ -23,6 +23,7 @@
 - [DECISION-MATRIX.md](DECISION-MATRIX.md)：评分规则与淘汰线
 - [CURRENT-RECOMMENDATION.md](CURRENT-RECOMMENDATION.md)：首轮调研后的当前建议
 - [PLAN.md](PLAN.md)：从补齐约束到搬家的执行步骤
+- [research/kindergarten-2026-urgent.md](research/kindergarten-2026-urgent.md)：2026小班补录与租房家庭紧急核验
 - [TASKS.md](TASKS.md)：调研任务、验收标准和进度
 - [data/candidates.csv](data/candidates.csv)：候选片区的结构化数据
 - [docs/field-visit-checklist.md](docs/field-visit-checklist.md)：看房与实地考察清单
