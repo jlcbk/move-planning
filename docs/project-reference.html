@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>搬家选址项目参考 · 北汽蓝谷通勤圈 2010后次新盘</title>
+<style>
+  :root{
+    --ink:#1f2933; --muted:#66727d; --line:#e2e6ea; --bg:#f7f8fa;
+    --t1:#1a7f5a; --t1bg:#e7f5ee;   /* 第一梯队 绿 */
+    --t2:#2563a8; --t2bg:#e8f0f9;   /* 第二梯队 蓝 */
+    --tw:#a86a12; --twbg:#fbf1df;   /* 观察 琥珀 */
+    --tf:#7a4bb0; --tfbg:#f1eafa;   /* 远端 紫 */
+    --tx:#b23c3c; --txbg:#fbeaea;   /* 降级/淘汰 红 */
+    --accent:#0f5c8c;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    color:var(--ink);line-height:1.7;background:var(--bg);font-size:15px}
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px 80px}
+  header.cover{background:linear-gradient(135deg,#0f5c8c,#1a7f5a);color:#fff;padding:46px 22px 38px;margin-bottom:0}
+  header.cover .inner{max-width:960px;margin:0 auto}
+  header.cover h1{margin:0 0 8px;font-size:27px;letter-spacing:.5px}
+  header.cover .sub{font-size:15px;opacity:.94;margin:2px 0}
+  header.cover .meta{margin-top:16px;font-size:13px;opacity:.9;border-top:1px solid rgba(255,255,255,.3);padding-top:12px}
+  h2{font-size:20px;margin:38px 0 12px;padding-bottom:7px;border-bottom:2px solid var(--accent);color:var(--accent)}
+  h3{font-size:16px;margin:24px 0 8px;color:var(--ink)}
+  p{margin:9px 0}
+  .lead{font-size:15.5px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);
+    padding:14px 18px;border-radius:6px;margin:14px 0}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:#fff;border-radius:6px;overflow:hidden}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#eef2f5;font-weight:600;color:#34404a}
+  td.num{text-align:right;white-space:nowrap}
+  .tag{display:inline-block;padding:1px 9px;border-radius:11px;font-size:12px;font-weight:600;white-space:nowrap}
+  .tag.t1{background:var(--t1bg);color:var(--t1)} .tag.t2{background:var(--t2bg);color:var(--t2)}
+  .tag.tw{background:var(--twbg);color:var(--tw)} .tag.tf{background:var(--tfbg);color:var(--tf)}
+  .tag.tx{background:var(--txbg);color:var(--tx)}
+  .toc{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 20px;margin:22px 0;columns:2;column-gap:30px}
+  .toc a{color:var(--accent);text-decoration:none;display:block;padding:3px 0;font-size:14px;break-inside:avoid}
+  .toc a:hover{text-decoration:underline}
+  .card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 18px;margin:14px 0;border-top:3px solid var(--line)}
+  .card.t1{border-top-color:var(--t1)} .card.t2{border-top-color:var(--t2)}
+  .card.tw{border-top-color:var(--tw)} .card.tf{border-top-color:var(--tf)} .card.tx{border-top-color:var(--tx)}
+  .card h3{margin-top:0;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .kv{display:grid;grid-template-columns:88px 1fr;gap:2px 12px;font-size:13.5px;margin:8px 0}
+  .kv dt{color:var(--muted)} .kv dd{margin:0}
+  .redline{background:var(--txbg);border:1px solid #eecaca;border-left:4px solid var(--tx);border-radius:6px;padding:12px 16px;margin:12px 0}
+  .redline b{color:var(--tx)}
+  .note{background:#fff;border:1px solid var(--line);border-radius:6px;padding:12px 16px;margin:12px 0;font-size:13.5px;color:var(--muted)}
+  ol,ul{margin:9px 0;padding-left:22px} li{margin:5px 0}
+  .checklist{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 20px;margin:14px 0}
+  .checklist .grp{font-weight:600;color:var(--accent);margin:12px 0 4px}
+  code{background:#eef2f5;padding:1px 5px;border-radius:4px;font-size:12.5px;font-family:"SF Mono",Consolas,monospace}
+  .footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+  a{color:var(--accent)}
+  @media (max-width:640px){.toc{columns:1}.kv{grid-template-columns:76px 1fr}}
+  @media print{
+    body{background:#fff;font-size:11.5pt}
+    .wrap{max-width:100%;padding:0}
+    header.cover{background:#0f5c8c !important}
+    h2{page-break-after:avoid} .card,.redline,table{page-break-inside:avoid}
+    .toc a{color:var(--ink)}
+    a{color:var(--ink);text-decoration:none}
+  }
+</style>
+</head>
+<body>
+<header class="cover">
+  <div class="inner">
+    <h1>搬家选址项目参考</h1>
+    <div class="sub">北汽蓝谷（亦庄东环中路5号）通勤圈 · 整租 ≥80㎡ · 月租 ≤5000元 · 2010年后建成</div>
+    <div class="sub">面向家庭长期租住（3年以上），兼顾通勤、住房、停车、环境与幼儿园</div>
+    <div class="meta">
+      检索基准日：2026-07-24　|　覆盖扇区：经开区核心 / 亦庄河西 / 瀛海旧宫 / 西红门 / 马驹桥台湖次渠 / 采育远端<br>
+      通勤与坐标为路网几何估算（非实时高峰）；租金为平台挂牌样本（非成交价、非在租承诺）
+    </div>
+  </div>
+</header>
+<div class="wrap">
+
+  <div class="toc">
+    <a href="#bg">1. 项目背景与目标</a>
+    <a href="#req">2. 需求约束</a>
+    <a href="#matrix">3. 决策矩阵（评分与淘汰线）</a>
+    <a href="#overview">4. 候选分档总表</a>
+    <a href="#t1">5. 第一梯队候选详情</a>
+    <a href="#t2">6. 第二梯队候选详情</a>
+    <a href="#others">7. 观察 / 远端 / 排除</a>
+    <a href="#redlines">8. 三条签约前红线</a>
+    <a href="#budget">9. 预算与现金流</a>
+    <a href="#actions">10. 行动清单</a>
+    <a href="#sources">11. 数据来源与免责</a>
+  </div>
+
+  <h2 id="bg">1. 项目背景与目标</h2>
+  <p class="lead">在北汽蓝谷新能源总部（北京经济技术开发区亦庄东环中路5号）通勤圈内，为一个有车、计划长期租住3年以上、孩子2026年秋季上小班的家庭，找到兼顾<b>通勤、住房、停车、居住环境与幼儿园</b>的稳定方案。本轮在首轮（马驹桥国风美仑基准）基础上放宽范围：不预设片区，按地理扇区系统性发现候选，硬性偏好<b>2010年后建成</b>、开车尽量30分钟内、生活便利，最远探至大兴采育镇。</p>
+  <p>本文件把四个扇区调研 + 头部候选深挖的结论提炼为可汇报的整体参考。分档为纸面初筛，<b>不是签约排名</b>；最终定级取决于电话核验（幼儿园、物业）与工作日高峰实测。</p>
+
+  <h2 id="req">2. 需求约束</h2>
+  <table>
+    <tr><th style="width:150px">维度</th><th>要求</th></tr>
+    <tr><td>租赁方式</td><td>整租</td></tr>
+    <tr><td>建筑面积</td><td>≥ 80㎡</td></tr>
+    <tr><td>月租</td><td>≤ 5000 元（净租金口径，物业/供暖/车位另计）</td></tr>
+    <tr><td>房龄</td><td>2010 年后建成（电梯社区、管线与户型更新）</td></tr>
+    <tr><td>通勤</td><td>开车尽量 30 分钟内；早高峰单程 ≤ 40 分钟为否决线</td></tr>
+    <tr><td>用车</td><td>有车，要求可稳定停车；公共交通作兜底</td></tr>
+    <tr><td>幼儿园</td><td>公办或普惠优先；保教 + 伙食 + 必要代办月均 ≤ 3000 元</td></tr>
+    <tr><td>居住</td><td>适合带孩子长期生活；买菜、医疗、儿童活动便利</td></tr>
+  </table>
+
+  <h2 id="matrix">3. 决策矩阵（评分与淘汰线）</h2>
+  <h3>一票否决项（任一不满足则不签约）</h3>
+  <ol>
+    <li>月租超 5000 元且房东不接受可承担的长期价</li>
+    <li>建筑面积不足 80㎡</li>
+    <li>无法提供合法、可核验的出租权属和正式租赁合同</li>
+    <li>幼儿园没有可操作的报名路径，或月均必要支出明显超 3000 元</li>
+    <li>夜间 20:00 后连续两次实测无法稳定停车，且无可租固定车位</li>
+    <li>工作日早高峰到北汽蓝谷单程实测长期超过 40 分钟</li>
+    <li>房屋存在明显甲醛、潮湿、噪声、消防、群租或产权风险</li>
+  </ol>
+  <h3>加权评分（满分 100）</h3>
+  <table>
+    <tr><th>维度</th><th class="num">权重</th><th>评分重点</th></tr>
+    <tr><td>幼儿园可进入性</td><td class="num">25</td><td>招生边界、租房家庭材料、学位确定性、接送距离</td></tr>
+    <tr><td>通勤</td><td class="num">20</td><td>早晚高峰实测、路线稳定性、公共交通兜底</td></tr>
+    <tr><td>住房性价比</td><td class="num">20</td><td>80㎡以上、房租、房屋状态、长期议价空间</td></tr>
+    <tr><td>停车</td><td class="num">15</td><td>固定车位、费用、晚间空位、充电条件</td></tr>
+    <tr><td>居住环境</td><td class="num">10</td><td>噪声、绿化、步行空间、物业、邻里与安全</td></tr>
+    <tr><td>日常配套</td><td class="num">5</td><td>买菜、医疗、商场、儿童活动</td></tr>
+    <tr><td>三年稳定性</td><td class="num">5</td><td>房东稳定性、涨租条款、片区建设扰动</td></tr>
+  </table>
+
+  <h2 id="overview">4. 候选分档总表</h2>
+  <p>档位含义：<span class="tag t1">第一梯队</span> 房龄达标 + 预算内有合规房源 + 通勤可接受；<span class="tag t2">第二梯队</span> 达标但有明显短板；<span class="tag tw">观察</span> 需补数据；<span class="tag tf">远端权衡</span> 租金极优但通勤重；<span class="tag tx">降级/排除</span> 触硬伤。</p>
+  <table>
+    <tr>
+      <th>档位</th><th>小区</th><th>扇区</th><th>建成</th><th>预算内样本(元/月)</th><th>早高峰通勤(估算)</th><th>最大未决变量</th>
+    </tr>
+    <tr><td><span class="tag t1">一队</span></td><td>南海家园五里</td><td>B 河西</td><td>2012-13</td><td>90㎡ 4100-4300</td><td>22-30 min</td><td>教育口径经开 vs 大兴</td></tr>
+    <tr><td><span class="tag t1">一队</span></td><td>南海家园六里</td><td>B 河西</td><td>2012-13</td><td>大两居 ~4300-4900（面积待核）</td><td>22-30 min</td><td>教育口径 + 样本待补</td></tr>
+    <tr><td><span class="tag t1">一队</span></td><td>和悦华锦二期</td><td>A 核心</td><td>2021 交房</td><td>90㎡三居 4850-5000</td><td>18-24 min</td><td>车位月费偏高 + 贴上限</td></tr>
+    <tr><td><span class="tag t1">一队</span></td><td>富力尚悦居 C/E区</td><td>D 马驹桥</td><td>2015</td><td>87㎡ 4300；84-99㎡ 5200-5300</td><td>25-30 min</td><td>混商住需核楼栋住宅性质 + 学位</td></tr>
+    <tr><td><span class="tag t2">二队</span></td><td>瀛海家园 和园/瑞园/融园</td><td>C 瀛海</td><td>2013-15</td><td>融园85㎡ 4100；和园~80㎡ 3700</td><td>30-40 min</td><td>公办园租户门槛高、大户型稀缺</td></tr>
+    <tr><td><span class="tag t2">二队</span></td><td>旧宫新苑 南/北区</td><td>C 旧宫</td><td>2012</td><td>89㎡两居 4900</td><td>35-45 min</td><td>回迁/经适产权、通勤偏长</td></tr>
+    <tr><td><span class="tag t2">二队</span></td><td>有德家苑</td><td>C 旧宫</td><td>2015</td><td>片区 90㎡级 4300-4600（待实时筛）</td><td>35-45 min</td><td>房源样本待补、对口园待查</td></tr>
+    <tr><td><span class="tag tw">观察</span></td><td>北京经开壹中心</td><td>A 核心</td><td>2015-17</td><td>合规样本少（偏小户/大三居超预算）</td><td>22-28 min</td><td>预算内命中率低</td></tr>
+    <tr><td><span class="tag tw">观察</span></td><td>中信新城西区</td><td>B 河西</td><td>2013-15</td><td>两居 4000-5000（待核）</td><td>25-32 min（临界）</td><td>停车不足 + 通勤临界 + 口径不明</td></tr>
+    <tr><td><span class="tag tw">观察</span></td><td>次渠嘉园 四/五区</td><td>D 次渠</td><td>主力 2009-13</td><td>≥80㎡ 供给薄</td><td>20-25 min</td><td>达标户型少、部分楼栋早于2010</td></tr>
+    <tr><td><span class="tag tf">远端</span></td><td>采育 满庭春MOMA / 育新花园</td><td>F 采育</td><td>2014-17 / 早期</td><td>80-96㎡ <b>2000-2200</b></td><td><b>60-90 min</b></td><td>通勤1-1.5小时、教育走大兴采育</td></tr>
+    <tr><td><span class="tag tx">降级</span></td><td>西红门 兴海家园/鸿坤理想城</td><td>E 西红门</td><td>2013后</td><td>84㎡ 4700</td><td><b>45-60 min（超时）</b></td><td>东西横穿南五环</td></tr>
+    <tr><td><span class="tag tx">不推荐</span></td><td>亦庄金茂悦南区</td><td>B 河西</td><td>2014-20</td><td>预算内几无 ≥80㎡</td><td>28-35 min</td><td>预算 + 通勤双超</td></tr>
+    <tr><td><span class="tag tx">排除</span></td><td>珠江四季悦城 / 鸿坤云时代</td><td>D 马驹桥/次渠</td><td>2014-16</td><td>90㎡ 4300（但商住产权）</td><td>25-30 min</td><td>50年产权/LOFT，学位大概率不可用</td></tr>
+    <tr><td><span class="tag tx">排除</span></td><td>菊源南里 / 芳源里</td><td>C 旧宫</td><td>2001-09</td><td>—</td><td>—</td><td>房龄不达标</td></tr>
+  </table>
+  <p class="lead"><b>一句话总览：</b>命中"整租/80㎡/5000内/带娃/次新"画像最准的是 <b>南海家园五里/六里</b>（前提教育口径敲定）、<b>和悦华锦二期</b>（房龄最新、通勤最短，代价是贴上限+车位月费）、<b>富力尚悦居 C/E区</b>（马驹桥同片区替代，代价是需核商住/学位）。瀛海系租金最低但公办园租户门槛高；采育是"省一半租金换每天多花 2-3 小时通勤"的纯权衡题。</p>
+
+  <h2 id="t1">5. 第一梯队候选详情</h2>
+
+  <div class="card t1">
+    <h3>南海家园五里 <span class="tag t1">第一梯队</span></h3>
+    <dl class="kv">
+      <dt>扇区/行政</dt><dd>亦庄河西区 · 行政属大兴区瀛海镇</dd>
+      <dt>建成</dt><dd>2012-2013（回迁房 2472 套，容积率 2.2）</dd>
+      <dt>通勤估算</dt><dd>直线约 4km，早高峰约 22-30 分钟（非实测）</dd>
+      <dt>房源样本</dt><dd>2室1厅 90㎡ 4100 元/月；另有 90㎡ 4300 元/月（2026-07-24 挂牌）</dd>
+      <dt>幼儿园</dt><dd>经开区第五幼儿园（公办）在片区内；租户顺位与报名路径取决于教育口径归属</dd>
+      <dt>停车</dt><dd>平台数据冲突（标 0 / 400），回迁社区普遍偏紧，需物业核实</dd>
+    </dl>
+    <p><b>亮点：</b>预算内有两套 90㎡ ≤4300 达标样本，公办五幼就在片区。<b>风险：</b>回迁属性、物业品质参差；90㎡ 多为两居；<b>教育口径未决是最大变量</b>。</p>
+  </div>
+
+  <div class="card t1">
+    <h3>南海家园六里 <span class="tag t1">第一梯队</span></h3>
+    <dl class="kv">
+      <dt>扇区/行政</dt><dd>亦庄河西区 · 行政属大兴区瀛海镇</dd>
+      <dt>建成</dt><dd>2012-2013（约 35 栋 3213 户）</dd>
+      <dt>通勤估算</dt><dd>同五里片区，早高峰约 22-30 分钟</dd>
+      <dt>房源样本</dt><dd>大两居 ~4300-4900 元/月（面积待核实）；干净达标样本需实时筛</dd>
+      <dt>幼儿园</dt><dd>同五里（公办五幼片区内）</dd>
+      <dt>停车</dt><dd>贝壳标车位 3500，对 3213 户约 1.09:1（回迁系里较好）；物业 010-53506968</dd>
+    </dl>
+    <p><b>亮点：</b>车位相对充裕，教育口径明确后价值高。<b>风险：</b>预算内合规样本待补；教育口径同五里。</p>
+  </div>
+
+  <div class="card t1">
+    <h3>和悦华锦二期 <span class="tag t1">第一梯队</span></h3>
+    <dl class="kv">
+      <dt>扇区/行政</dt><dd>A 经开区核心 · 大兴区亦庄河西区</dd>
+      <dt>建成</dt><dd>2018 开盘、2021 交房（19 栋 1823 户）——<b>本批房龄最新</b></dd>
+      <dt>通勤估算</dt><dd>直线约 3km，早高峰约 18-24 分钟——<b>本批通勤最短之一</b></dd>
+      <dt>房源样本</dt><dd>90㎡三居 4850-5000 元/月（2026-07-24 挂牌，贴预算上限）</dd>
+      <dt>幼儿园</dt><dd>紧邻龙湖亦庄天街，周边配套园多；租户在大兴顺位通常落末位批次</dd>
+      <dt>停车</dt><dd>车位 2065 个、配比 1:1.2（<b>本批最充裕</b>）；但业主贴称租金 700+管理 180/月，且有历史产权纠纷</dd>
+    </dl>
+    <p><b>亮点：</b>房龄最新、通勤最短、龙湖天街配套强。<b>风险：</b>90㎡三居贴 5000 上限、议价空间小；车位月费偏高；部分产权 40 年，需核保利物业当前收费与充电桩政策。</p>
+  </div>
+
+  <div class="card t1">
+    <h3>富力尚悦居 C/E 区 <span class="tag t1">第一梯队</span></h3>
+    <dl class="kv">
+      <dt>扇区/行政</dt><dd>D 马驹桥 · 通州区马驹桥镇（国风美仑同片区替代盘）</dd>
+      <dt>建成</dt><dd>2015 年</dd>
+      <dt>通勤估算</dt><dd>路网约 7km，早高峰约 25-30 分钟（经海路方向，易堵）</dd>
+      <dt>房源样本</dt><dd>E区 87㎡ 4300 元/月；C区 84.66㎡ 5200、99.28㎡ 5300 元/月（2026-07-24 挂牌）</dd>
+      <dt>幼儿园</dt><dd>马驹桥镇多所园所，公办/普惠名额待核实（教育走通州区口径）</dd>
+      <dt>停车</dt><dd>容积率 2.5，塔板结合，配底商及地下车库</dd>
+    </dl>
+    <div class="redline"><b>产权提示：</b>同园区为商品房 + 保障房 + <b>商住公寓</b>混合业态。租房须核对目标楼栋为 70 年住宅（而非 40/50 年商办），否则影响学位。</div>
+    <p><b>亮点：</b>年份/面积/租金三项均命中，马驹桥商圈配套成熟。<b>风险：</b>楼栋住宅性质与学位须先核实；早高峰经海路易堵，30 分钟为乐观值。</p>
+  </div>
+
+  <h2 id="t2">6. 第二梯队候选详情</h2>
+
+  <div class="card t2">
+    <h3>瀛海家园 和园 / 瑞园 / 融园 <span class="tag t2">第二梯队</span></h3>
+    <dl class="kv">
+      <dt>扇区/行政</dt><dd>C 瀛海 · 大兴区瀛海镇（教育走大兴区）</dd>
+      <dt>建成</dt><dd>和园 2013、瑞园 E区 2013-2015、融园同系 2013-15</dd>
+      <dt>通勤估算</dt><dd>里程约 6-9km，早高峰约 30-40 分钟——<b>三片区中通勤最优</b></dd>
+      <dt>房源样本</dt><dd>融园 D区 85㎡ 4100；和园 ~80㎡ 3700；和园 B区整租 3100 元/月（面积待核）</dd>
+      <dt>幼儿园</dt><dd>瀛海五幼服务范围<b>不含</b>此三园；租户材料要求含镇域社保满2年 + 租赁合同，且租户排末位</dd>
+      <dt>停车</dt><dd>瑞园 150 元/月锚点，其余待物业核实</dd>
+    </dl>
+    <p><b>亮点：</b>瀛海系整租价最低（3100-4100），房龄/通勤好。<b>风险：</b>≥80㎡ 大户型供给稀薄（在租多为小户）；公办园租户门槛显著。</p>
+  </div>
+
+  <div class="card t2">
+    <h3>旧宫新苑 南/北区 <span class="tag t2">第二梯队</span></h3>
+    <dl class="kv">
+      <dt>扇区/行政</dt><dd>C 旧宫 · 大兴区旧宫镇</dd>
+      <dt>建成</dt><dd>2012（北区红星地产 10 栋 824 户；南区回迁安置性质）</dd>
+      <dt>通勤估算</dt><dd>里程约 10-13km，早高峰约 35-45 分钟</dd>
+      <dt>房源样本</dt><dd>北区 89㎡两居 4900 元/月（近地铁精装，2026-07-24）</dd>
+      <dt>停车</dt><dd>车位 2400、停车费 100 元/月（本批车位费最低）</dd>
+    </dl>
+    <p><b>亮点：</b>房龄明确达标、车位费低。<b>风险：</b>南区回迁 / 北区含二类经适，产权与租赁合规需确认；通勤偏长；89㎡ 逼近上限。</p>
+  </div>
+
+  <div class="card t2">
+    <h3>有德家苑（旧宫五福堂片区）<span class="tag t2">第二梯队</span></h3>
+    <dl class="kv">
+      <dt>扇区/行政</dt><dd>C 旧宫 · 大兴区旧宫镇（近五福堂站，亦庄线）</dd>
+      <dt>建成</dt><dd>2015-2016</dd>
+      <dt>通勤估算</dt><dd>早高峰约 35-45 分钟（向东进亦庄相对顺）</dd>
+      <dt>房源样本</dt><dd>本轮 ≥80㎡ 干净样本未命中，需实时筛；片区参考旧宫新苑 62-90㎡ 供给较多</dd>
+      <dt>停车</dt><dd>车位 700、停车费 150 元/月（户车比待核）</dd>
+    </dl>
+    <p class="note"><b>重要修正：</b>同片区 <b>菊源南里（2001-2003）、芳源里（2000-2009）主体早于 2010，已排除</b>；五福堂片区仅有德家苑满足房龄门槛。</p>
+  </div>
+
+  <h2 id="others">7. 观察 / 远端 / 排除</h2>
+
+  <div class="card tw">
+    <h3>观察档 <span class="tag tw">需补数据后再定级</span></h3>
+    <ul>
+      <li><b>北京经开壹中心</b>（A核心，2015-17，早高峰 22-28 min）：次新达标，但预算内 ≥80㎡ 合规房源少（在售偏小户或大三居超预算），命中率低。</li>
+      <li><b>中信新城西区</b>（B河西，2013-15，早高峰 25-32 min 临界）：安居客评测提示"停车位不足"；通勤临界 30 分钟；教育是否走经开区口径待核；部分两限房。</li>
+      <li><b>次渠嘉园 四/五区</b>（D次渠，主力 2009-13，早高峰 20-25 min）：通勤/配套好，但主力户型偏小（59-78㎡），≥80㎡ 整租供给薄，部分楼栋早于 2010，需逐栋核房龄。</li>
+    </ul>
+  </div>
+
+  <div class="card tf">
+    <h3>远端权衡 · 采育镇 <span class="tag tf">省一半租金 vs 每天多花 2-3 小时</span></h3>
+    <p>满庭春 MOMA（2014-17，含车库电梯，84-96㎡ 仅 1999-2100 元/月）、育新花园（放量最大，80-88㎡ 电梯两居 2100-2200 元/月）。硬指标（≥80㎡、≤5000、停车）全部轻松达标，租金仅用预算 40-65%，宽松度全场最高。</p>
+    <div class="redline"><b>唯一但沉重的代价——通勤：</b>路网约 30-40km，无直连主干道需绕京台高速北上；平峰约 40-50 分钟，<b>早高峰约 60-90 分钟</b>；无地铁可做日通勤，有车家庭必须自驾。教育走<b>大兴区/采育镇</b>口径，非经开区。</div>
+    <p><b>决策路径：</b>①先确认公司是否接受弹性/远程办公；②若必须每日通勤，务必实地跑一次工作日早 7:30-8:30 采育→东环中路，校准 60-90 分钟估算。</p>
+  </div>
+
+  <div class="card tx">
+    <h3>降级 / 排除 <span class="tag tx">触硬伤</span></h3>
+    <ul>
+      <li><b>西红门（兴海家园/鸿坤理想城）</b>：东西向横穿南五环，早高峰估 45-60 分钟，超 30 分钟目标，整片区降级；仅在放宽通勤至 45 分钟以上时作价格洼地。</li>
+      <li><b>亦庄金茂悦南区</b>：预算内几无 ≥80㎡ 合规房源，且通勤偏长——预算 + 通勤双超。</li>
+      <li><b>珠江四季悦城 / 鸿坤云时代</b>：疑似 50 年产权商业立项 / 4.5 米 LOFT 商住公寓，<b>上小班学位大概率不可用</b>，不先核实即排除。</li>
+      <li><b>菊源南里（2001-03）/ 芳源里（2000-09）/ 荣京丽都 / 卡尔生活馆 / 金地格林小镇 / 台湖老商品房</b>等：<b>房龄不达标</b>。台湖 2010 后新增住房以保障房为主，不面向市场整租。</li>
+    </ul>
+  </div>
+
+  <h2 id="redlines">8. 三条签约前红线</h2>
+  <p>以下三项贯穿全局、直接决定候选能否成立，必须在签约或付不可退定金前解决：</p>
+  <div class="redline">
+    <b>红线一 · 南海家园教育口径（经开区 vs 大兴瀛海镇）</b> — 全局最大未决变量。<br>
+    行政区划属大兴瀛海镇，但此前被列入经开区河西区学区。幼儿园阶段两区是<b>两套独立平台、两套顺位规则、两套材料要求</b>（经开区要"单独承租 + 就业满3年"；瀛海镇要"镇域社保/纳税满2年"）。必须向经开区社会事业局和瀛海镇/大兴区教委<b>双向电话确认</b>，否则无法确定对口园与材料方向。
+  </div>
+  <div class="redline">
+    <b>红线二 · 马驹桥/次渠疑似商住盘的房屋性质（70年住宅 vs 40/50年商办）</b><br>
+    富力尚悦居须核对目标楼栋为 70 年住宅；珠江四季悦城、鸿坤云时代疑似商住/公寓，学位大概率不可用。产权性质直接决定能否落学籍，须优先核实，无法解决则排除。
+  </div>
+  <div class="redline">
+    <b>红线三 · 各盘车位比 / 车位月费 / 充电桩</b><br>
+    平台正文本轮被人机验证拦截，多数只拿到零散锚点（如六里车位 3500、旧宫新苑 100 元/月、有德家苑 150 元/月、和悦华锦疑 700+180）。每个候选的车位对租户是否开放、月费、充电桩条件，均需逐个物业电话核实。
+  </div>
+
+  <h2 id="budget">9. 预算与现金流</h2>
+  <p>完整的搬家一次性成本与三年现金流模型见仓库 <code>research/moving-and-budget.md</code>（保守/基准/宽松三场景 + ≥15% 应急缓冲），覆盖：押金与首期租金、中介/平台服务费、搬家公司与打包、旧房退租重叠期、家具家电与儿童安全改造、车位押金/充电设备、通勤与幼儿园月度支出。</p>
+  <h3>幼儿园月度支出参考（已确认公开标准）</h3>
+  <table>
+    <tr><th>口径</th><th>保教费</th><th>伙食费</th><th>月度合计估算</th></tr>
+    <tr><td>经开区公办园</td><td class="num">约 600 元/月</td><td>约 25-35 元/日</td><td class="num">约 1100-1300 元</td></tr>
+    <tr><td>通州区（国风美仑园）</td><td class="num">750 元/月</td><td>25 元/日</td><td class="num">约 1250-1300 元</td></tr>
+    <tr><td>普惠民办园</td><td class="num">约 900 元/月</td><td>约 30 元/日</td><td class="num">约 1500-1700 元</td></tr>
+  </table>
+  <p class="note">以上为各区公开收费标准，均低于 3000 元月度上限，预算宽裕。但延时托管、班车、被褥、保险与兴趣活动可能另收，签约前须问清"全口径月费"。</p>
+
+  <h2 id="actions">10. 行动清单</h2>
+  <div class="checklist">
+    <div class="grp">教育口径（最高优先级）</div>
+    <ul>
+      <li>经开区社会事业局：南海家园五里/六里 2026 入园走经开区还是大兴区平台？租房家庭对口园、材料、顺位？</li>
+      <li>瀛海镇教委 / 大兴区教委：同一问题反向确认，避免两边都说"不归我管"。</li>
+      <li>瀛海第五幼儿园：和园/瑞园/融园是否在任一瀛海公办园服务范围内？租户"镇域社保满2年"2026 是否仍执行？</li>
+      <li>旧宫片区对口园：查大兴区 2026 幼儿园名单后，电话有德家苑对应园所问招小班、租户批次、材料。</li>
+    </ul>
+    <div class="grp">产权与物业车位（各小区分别打）</div>
+    <ul>
+      <li>富力尚悦居：核对目标楼栋为 70 年住宅还是商办；珠江四季悦城/鸿坤云时代同样先核产权。</li>
+      <li>南海家园六里物业 010-53506968：车位 3500 是否含地下/对租户开放、月租、充电桩。</li>
+      <li>南海家园五里、和悦华锦（保利物业）、瀛海和园系、有德家苑、旧宫新苑：车位数/户车比/月费/充电桩。</li>
+      <li>和悦华锦额外核：车位租金+管理费实际金额、一二期道路产权纠纷是否解决。</li>
+    </ul>
+    <div class="grp">房源实时补样（房源易下架，用房时再筛）</div>
+    <ul>
+      <li>六里、有德家苑、瑞园 E区、南海家园二里、次渠嘉园的 ≥80㎡ 且 ≤5000 整租样本，用房时在贝壳/安居客按"整租 + 建面80-110 + 租金≤5000"实时筛选核对面积与真实性。</li>
+    </ul>
+    <div class="grp">实地验证（进入看房阶段）</div>
+    <ul>
+      <li>工作日 7:30-9:00 从候选楼栋开车到东环中路 5 号，17:30-19:00 反向各一次，以"车位出发到公司落位"总时间为准。</li>
+      <li>工作日与周末 20:00 后各做一次夜间停车实测。</li>
+      <li>从候选单元步行到对口幼儿园、公交站、菜市场，核验接送动线与安全。</li>
+    </ul>
+  </div>
+
+  <h2 id="sources">11. 数据来源与免责</h2>
+  <p>建成年份来自贝壳/链家/安居客/房天下"小区概况"页、百度百科及政府/教育官网；房源为平台挂牌样本，抓取日期 2026-07-24，非成交价、非在租承诺；通勤时间与坐标为无实时地图 API 情况下基于路网几何的<b>估算，非实时高峰实测</b>，签约前须工作日早高峰实测。原始分扇区报告与结构化数据见仓库 <code>research/expanded-candidates.md</code>、<code>data/candidates.csv</code>、<code>DECISION-MATRIX.md</code>。</p>
+  <p>所有价格、路线时间和录取判断均为阶段性样本，不代表未来挂牌价、录取承诺或高峰通勤承诺。最终决定前必须完成工作日高峰试跑、幼儿园电话确认和夜间停车实测。本文件不含任何个人敏感信息。</p>
+
+  <div class="footer">
+    搬家策划项目 · 内部决策参考 · 检索基准日 2026-07-24 · 由调研仓库 move-planning 自动汇总生成
+  </div>
+
+</div>
+</body>
+</html>
