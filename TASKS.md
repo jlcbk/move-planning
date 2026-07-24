@@ -2,6 +2,13 @@
 
 更新时间：2026-07-24
 
+GitHub 跟踪：
+
+- [#1 国风美仑基准候选](https://github.com/jlcbk/move-planning/issues/1)
+- [#2 搬家成本与三年现金流](https://github.com/jlcbk/move-planning/issues/2)
+- [#3 备选片区横向比较](https://github.com/jlcbk/move-planning/issues/3)
+- [#4 幼儿园政策与跨区边界](https://github.com/jlcbk/move-planning/issues/4)
+
 ## P0：签租约前必须完成
 
 - [ ] 确认孩子年龄、目标入园时间、户籍/居住证情况、是否接受托班或插班
@@ -65,4 +72,3 @@
 3. 实地筛选：每个小区集中看 3–5 套房
 4. 试住式验证：高峰通勤、夜间停车、接送路线
 5. 合同谈判：长期租期、涨租上限、维修与提前解约
-

@@ -21,6 +21,8 @@
 ## 项目结构
 
 - [DECISION-MATRIX.md](DECISION-MATRIX.md)：评分规则与淘汰线
+- [CURRENT-RECOMMENDATION.md](CURRENT-RECOMMENDATION.md)：首轮调研后的当前建议
+- [PLAN.md](PLAN.md)：从补齐约束到搬家的执行步骤
 - [TASKS.md](TASKS.md)：调研任务、验收标准和进度
 - [data/candidates.csv](data/candidates.csv)：候选片区的结构化数据
 - [docs/field-visit-checklist.md](docs/field-visit-checklist.md)：看房与实地考察清单
@@ -30,9 +32,8 @@
 
 ## 当前状态
 
-首轮并行调研中。最终排序尚未形成，不应将任何候选视为推荐结论。
+首轮调研已形成阶段性建议：国风美仑、鹿海园、贵园/亦庄生活区进入第一轮实地比较。最终签约仍取决于幼儿园、停车和高峰通勤核验。
 
 ## 信息安全
 
 本仓库是 public。不得提交孩子姓名、生日、身份证号、户籍页、居住证、租赁合同、车牌、电话号码、精确家庭住址或任何账号凭据。实际申请材料只在本地保存。
-
