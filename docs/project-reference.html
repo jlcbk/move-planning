@@ -49,6 +49,14 @@
   .redline{background:var(--txbg);border:1px solid #eecaca;border-left:4px solid var(--tx);border-radius:6px;padding:12px 16px;margin:12px 0}
   .redline b{color:var(--tx)}
   .note{background:#fff;border:1px solid var(--line);border-radius:6px;padding:12px 16px;margin:12px 0;font-size:13.5px;color:var(--muted)}
+  .dash{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+  .dcard{background:#fff;border:1px solid var(--line);border-top:3px solid var(--muted);border-radius:8px;padding:14px 16px}
+  .dcard.best{border-top-color:var(--t1)}
+  .dcard.warn{border-top-color:var(--tw)}
+  .dhead{font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.3px}
+  .dname{font-size:16px;font-weight:700;color:var(--ink);margin:4px 0 6px}
+  .dbody{font-size:13px;line-height:1.6}
+  @media (max-width:640px){.dash{grid-template-columns:1fr}}
   ol,ul{margin:9px 0;padding-left:22px} li{margin:5px 0}
   .checklist{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 20px;margin:14px 0}
   .checklist .grp{font-weight:600;color:var(--accent);margin:12px 0 4px}
@@ -81,24 +89,58 @@
 <div class="wrap">
 
   <div class="toc">
-    <a href="#bg">1. 项目背景与目标</a>
-    <a href="#req">2. 需求约束</a>
-    <a href="#matrix">3. 决策矩阵（评分与淘汰线）</a>
-    <a href="#overview">4. 候选分档总表</a>
-    <a href="#t1">5. 第一梯队候选详情</a>
-    <a href="#t2">6. 第二梯队候选详情</a>
-    <a href="#others">7. 观察 / 远端 / 排除</a>
-    <a href="#redlines">8. 三条签约前红线</a>
-    <a href="#budget">9. 预算与现金流</a>
-    <a href="#actions">10. 行动清单</a>
-    <a href="#sources">11. 数据来源与免责</a>
+    <a href="#decision">1. 决策看板（先看这里）</a>
+    <a href="#bg">2. 项目背景与目标</a>
+    <a href="#req">3. 需求约束</a>
+    <a href="#matrix">4. 决策矩阵（评分与淘汰线）</a>
+    <a href="#overview">5. 候选分档总表</a>
+    <a href="#compare">6. 第一梯队全维对照</a>
+    <a href="#t1">7. 第一梯队候选详情</a>
+    <a href="#t2">8. 第二梯队候选详情</a>
+    <a href="#others">9. 观察 / 远端 / 排除</a>
+    <a href="#redlines">10. 三条签约前红线</a>
+    <a href="#budget">11. 预算与现金流</a>
+    <a href="#actions">12. 行动清单</a>
+    <a href="#sources">13. 数据来源与免责</a>
   </div>
 
-  <h2 id="bg">1. 项目背景与目标</h2>
+  <h2 id="decision">1. 决策看板（先看这里）</h2>
+  <p class="lead"><b>当前状态：</b>纸面调研已收敛出 4 个第一梯队候选，但<b>没有任何一个可以直接签约</b>——三条红线（教育口径、商住产权、车位对租户是否开放）尚未电话闭环。<b>下一步不是继续找房，而是打电话</b>：教育口径与补录通道决定候选生死，物业车位决定能否落地。</p>
+
+  <div class="dash">
+    <div class="dcard best">
+      <div class="dhead">通勤最优 + 房龄最新</div>
+      <div class="dname">和悦华锦二期</div>
+      <div class="dbody">早高峰约 18-24 分钟、2021 交房、龙湖天街配套最强。<b>代价：</b>90㎡三居贴 5000 上限、车位月费爆料 700+180、对口公办园未锁。</div>
+    </div>
+    <div class="dcard best">
+      <div class="dhead">性价比 + 简章已含</div>
+      <div class="dname">南海家园五里 / 六里</div>
+      <div class="dbody">90㎡ 4100-4300、经开五幼 2026 简章已写入服务范围。<b>代价：</b>市场租户第 7/9 档且常规窗已过、义务教育口径经开 vs 大兴未决、车位待核。</div>
+    </div>
+    <div class="dcard warn">
+      <div class="dhead">马驹桥替代盘</div>
+      <div class="dname">富力尚悦居 C/E</div>
+      <div class="dbody">2015、镇域公办园纸面允许租住报名。<b>代价：</b>同园区混商住公寓，<b>必须先锁目标楼栋为 70 年住宅</b>，否则学位不可用直接排除。</div>
+    </div>
+  </div>
+
+  <h3>四候选取舍一图流</h3>
+  <table>
+    <tr><th>如果你最看重…</th><th>首选</th><th>理由</th><th>必须先解决</th></tr>
+    <tr><td>接送 + 通勤最短</td><td><b>和悦华锦二期</b></td><td>通勤 18-24 min、房龄最新、天街配套</td><td>车位真实月费、对口园</td></tr>
+    <tr><td>租金 + 学位确定性</td><td><b>南海家园五里/六里</b></td><td>预算内样本足、简章已含服务范围</td><td>教育口径 + 市场租户补录</td></tr>
+    <tr><td>预算宽松 + 马驹桥生活圈</td><td><b>富力尚悦居 E区</b></td><td>87㎡ 4300 样本、镇域租住可报</td><td>目标楼栋 70 年住宅 + 学位</td></tr>
+    <tr><td>车位最省心（纸面）</td><td><b>南海家园六里</b></td><td>约 3500 车位、配比约 1.09:1</td><td>租户是否可租、月费、充电</td></tr>
+  </table>
+
+  <div class="note"><b>决策顺序建议：</b>① 打通教育口径与补录（决定候选留几个）→ ② 物业核车位与产权（决定能否落地）→ ③ 只对通过前两关的 ≤2 个候选安排看房 → ④ 工作日高峰试跑 + 夜间停车实测后定签。<b>红线未清前不付不可退定金。</b></div>
+
+  <h2 id="bg">2. 项目背景与目标</h2>
   <p class="lead">在北汽蓝谷新能源总部（北京经济技术开发区亦庄东环中路5号）通勤圈内，为一个有车、计划长期租住3年以上、孩子2026年秋季上小班的家庭，找到兼顾<b>通勤、住房、停车、居住环境与幼儿园</b>的稳定方案。本轮在首轮（马驹桥国风美仑基准）基础上放宽范围：不预设片区，按地理扇区系统性发现候选，硬性偏好<b>2010年后建成</b>、开车尽量30分钟内、生活便利，最远探至大兴采育镇。</p>
   <p>本文件把四个扇区调研 + 头部候选深挖的结论提炼为可汇报的整体参考。分档为纸面初筛，<b>不是签约排名</b>；最终定级取决于电话核验（幼儿园、物业）与工作日高峰实测。</p>
 
-  <h2 id="req">2. 需求约束</h2>
+  <h2 id="req">3. 需求约束</h2>
   <table>
     <tr><th style="width:150px">维度</th><th>要求</th></tr>
     <tr><td>租赁方式</td><td>整租</td></tr>
@@ -111,7 +153,7 @@
     <tr><td>居住</td><td>适合带孩子长期生活；买菜、医疗、儿童活动便利</td></tr>
   </table>
 
-  <h2 id="matrix">3. 决策矩阵（评分与淘汰线）</h2>
+  <h2 id="matrix">4. 决策矩阵（评分与淘汰线）</h2>
   <h3>一票否决项（任一不满足则不签约）</h3>
   <ol>
     <li>月租超 5000 元且房东不接受可承担的长期价</li>
@@ -134,7 +176,7 @@
     <tr><td>三年稳定性</td><td class="num">5</td><td>房东稳定性、涨租条款、片区建设扰动</td></tr>
   </table>
 
-  <h2 id="overview">4. 候选分档总表</h2>
+  <h2 id="overview">5. 候选分档总表</h2>
   <p>档位含义：<span class="tag t1">第一梯队</span> 房龄达标 + 预算内有合规房源 + 通勤可接受；<span class="tag t2">第二梯队</span> 达标但有明显短板；<span class="tag tw">观察</span> 需补数据；<span class="tag tf">远端权衡</span> 租金极优但通勤重；<span class="tag tx">降级/排除</span> 触硬伤。</p>
   <table>
     <tr>
@@ -158,7 +200,79 @@
   </table>
   <p class="lead"><b>一句话总览：</b>命中"整租/80㎡/5000内/带娃/次新"画像最准的是 <b>南海家园五里/六里</b>（前提教育口径敲定）、<b>和悦华锦二期</b>（房龄最新、通勤最短，代价是贴上限+车位月费）、<b>富力尚悦居 C/E区</b>（马驹桥同片区替代，代价是需核商住/学位）。瀛海系租金最低但公办园租户门槛高；采育是"省一半租金换每天多花 2-3 小时通勤"的纯权衡题。</p>
 
-  <h2 id="t1">5. 第一梯队候选详情</h2>
+  <h2 id="compare">6. 第一梯队全维对照</h2>
+  <p>按决策矩阵七个维度横向对照四个第一梯队候选。<b>加粗</b>为该维度相对最优；<span style="color:var(--tx)">红字</span>为该盘的主要短板或阻断项。所有通勤为路网估算、租金为平台样本、车位月费为平台/媒体锚点，均<b>待实测或电话闭环</b>。</p>
+  <table>
+    <tr>
+      <th>维度（权重）</th><th>和悦华锦二期</th><th>南海家园五里</th><th>南海家园六里</th><th>富力尚悦居 C/E</th>
+    </tr>
+    <tr>
+      <td>幼儿园可进入性（25）</td>
+      <td>对口公办园<span style="color:var(--tx)">未锁</span>，租户多落末位</td>
+      <td><b>经开五幼简章已含五里</b>；租户第 7/9 档、常规窗已过</td>
+      <td><b>经开五幼简章已含六里</b>；顺位同五里</td>
+      <td>镇域园<b>户籍房产不限、租住可报</b>；超额顺位未写</td>
+    </tr>
+    <tr>
+      <td>通勤（20）</td>
+      <td><b>18-24 min（最短）</b></td>
+      <td>22-30 min</td>
+      <td>22-30 min</td>
+      <td>25-30 min，<span style="color:var(--tx)">经海路易堵</span></td>
+    </tr>
+    <tr>
+      <td>住房性价比（20）</td>
+      <td>90㎡三居 4850-5000，<span style="color:var(--tx)">贴上限</span></td>
+      <td><b>90㎡ 4100-4300</b></td>
+      <td>大两居 4300-4900（面积待核）</td>
+      <td>E区 87㎡ 4300；C区 84-99㎡ 5200-5300</td>
+    </tr>
+    <tr>
+      <td>停车（15）</td>
+      <td>约 2065 位，<span style="color:var(--tx)">月费爆料 700+180</span></td>
+      <td><span style="color:var(--tx)">车位数 0/400 冲突</span>，锚点约 100 元/月</td>
+      <td><b>约 3500 位、约 1.09:1</b>，月费待核</td>
+      <td>E区约 300 位近 1:1；A区参考 400 元/月</td>
+    </tr>
+    <tr>
+      <td>居住环境（10）</td>
+      <td><b>6-8 层洋房、容积率约 1.8、绿化约 30%</b>；近产业区噪声待测</td>
+      <td>回迁密度盘，绿化约 25%、环境一般</td>
+      <td>同五里，户数更多、公共压力略高</td>
+      <td><span style="color:var(--tx)">商品房/保障房/商住公寓混建</span></td>
+    </tr>
+    <tr>
+      <td>日常配套（5）</td>
+      <td><b>紧邻龙湖亦庄天街（约16万㎡）</b></td>
+      <td>菜市场/物美 + 东方医院南院 + 南海子公园</td>
+      <td>同五里生活圈</td>
+      <td>马驹桥商圈 + 百尚广场（镇级够用）</td>
+    </tr>
+    <tr>
+      <td>三年稳定性（5）</td>
+      <td>次新、物业成熟；<span style="color:var(--tx)">车位/产权历史纠纷</span></td>
+      <td>回迁社区，物业品质参差</td>
+      <td>同五里</td>
+      <td>混业态，<span style="color:var(--tx)">产权性质决定能否落学籍</span></td>
+    </tr>
+    <tr>
+      <td>物业费锚点</td>
+      <td>保利约 3.98 元/㎡·月</td>
+      <td>同系约 1.3-2.4 元/㎡·月</td>
+      <td>同五里</td>
+      <td>恒富约 3.3-4 元/㎡·月</td>
+    </tr>
+    <tr>
+      <td>纸面综合印象</td>
+      <td><b>通勤/房龄/配套上限最高</b>，代价是贴租金上限 + 车位费</td>
+      <td><b>性价比 + 学位纸面确定性最好</b></td>
+      <td>五里加车位优势，样本待补</td>
+      <td>预算宽松但<b>受产权红线拖累</b></td>
+    </tr>
+  </table>
+  <p class="note"><b>宜居专项：</b>三盘各有取向——<b>和悦华锦</b>产品形态与商业配套一队最强，适合愿为环境付贴边租金的家庭；<b>南海五/六里</b>刚需便利（买菜/医疗/公园）强、社区品质中等，适合预算优先并接受回迁形态；<b>富力尚悦居</b>镇级生活闭环够用，但宜居上限取决于能否锁定 70 年住宅楼栋。噪声、异味、夜间安全感、楼内品质均<b>须实地分时段核验</b>，本表不作最终宜居承诺。</p>
+
+  <h2 id="t1">7. 第一梯队候选详情</h2>
 
   <div class="card t1">
     <h3>南海家园五里 <span class="tag t1">第一梯队</span></h3>
@@ -217,7 +331,7 @@
     <p><b>宜居/配套（2026-07-25）：</b>凉水河畔 + 马驹桥商圈/百尚广场，镇级生活闭环够用；社区商品房/保障房/商住公寓混建——<b>宜居上限取决于能否锁 70 年住宅楼栋</b>；大型品牌购物弱于亦庄天街。</p>
   </div>
 
-  <h2 id="t2">6. 第二梯队候选详情</h2>
+  <h2 id="t2">8. 第二梯队候选详情</h2>
 
   <div class="card t2">
     <h3>瀛海家园 和园 / 瑞园 / 融园 <span class="tag t2">第二梯队</span></h3>
@@ -256,7 +370,7 @@
     <p class="note"><b>重要修正：</b>同片区 <b>菊源南里（2001-2003）、芳源里（2000-2009）主体早于 2010，已排除</b>；五福堂片区仅有德家苑满足房龄门槛。</p>
   </div>
 
-  <h2 id="others">7. 观察 / 远端 / 排除</h2>
+  <h2 id="others">9. 观察 / 远端 / 排除</h2>
 
   <div class="card tw">
     <h3>观察档 <span class="tag tw">需补数据后再定级</span></h3>
@@ -284,7 +398,7 @@
     </ul>
   </div>
 
-  <h2 id="redlines">8. 三条签约前红线</h2>
+  <h2 id="redlines">10. 三条签约前红线</h2>
   <p>以下三项贯穿全局、直接决定候选能否成立，必须在签约或付不可退定金前解决：</p>
   <div class="redline">
     <b>红线一 · 南海家园教育口径（经开区 vs 大兴瀛海镇）</b> — 全局最大未决变量。<br>
@@ -299,7 +413,7 @@
     2026-07-25 已补平台/媒体锚点（六里约 3500 位、五里经纪约 100 元/月、和悦约 2065 位但月费爆料 700+180、富力 E 约 300 位/A 区参考 400 元/月），但<b>对租户是否开放、充电桩、夜间空位</b>仍须逐个物业电话 + 晚间实测。
   </div>
 
-  <h2 id="budget">9. 预算与现金流</h2>
+  <h2 id="budget">11. 预算与现金流</h2>
   <p>完整的搬家一次性成本与三年现金流模型见仓库 <code>research/moving-and-budget.md</code>（保守/基准/宽松三场景 + ≥15% 应急缓冲），覆盖：押金与首期租金、中介/平台服务费、搬家公司与打包、旧房退租重叠期、家具家电与儿童安全改造、车位押金/充电设备、通勤与幼儿园月度支出。</p>
   <h3>幼儿园月度支出参考（已确认公开标准）</h3>
   <table>
@@ -310,7 +424,7 @@
   </table>
   <p class="note">以上为各区公开收费标准，均低于 3000 元月度上限，预算宽裕。但延时托管、班车、被褥、保险与兴趣活动可能另收，签约前须问清"全口径月费"。</p>
 
-  <h2 id="actions">10. 行动清单</h2>
+  <h2 id="actions">12. 行动清单</h2>
   <div class="checklist">
     <div class="grp">教育口径（最高优先级）</div>
     <ul>
@@ -341,7 +455,7 @@
     </ul>
   </div>
 
-  <h2 id="sources">11. 数据来源与免责</h2>
+  <h2 id="sources">13. 数据来源与免责</h2>
   <p>建成年份来自贝壳/链家/安居客/房天下"小区概况"页、百度百科及政府/教育官网；房源为平台挂牌样本，抓取日期 2026-07-24（第一梯队三项补核 2026-07-25），非成交价、非在租承诺；通勤时间与坐标为无实时地图 API 情况下基于路网几何的<b>估算，非实时高峰实测</b>，签约前须工作日早高峰实测。原始分扇区报告与结构化数据见仓库 <code>research/expanded-candidates.md</code>、<code>data/candidates.csv</code>、<code>DECISION-MATRIX.md</code>。</p>
   <p>所有价格、路线时间和录取判断均为阶段性样本，不代表未来挂牌价、录取承诺或高峰通勤承诺。最终决定前必须完成工作日高峰试跑、幼儿园电话确认和夜间停车实测。本文件不含任何个人敏感信息。</p>
 
